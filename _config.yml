@@ -42,7 +42,7 @@ urlimg: 'https://earthnodepekoe.github.io/earthnodepekoe/images/'
 
 
 # Logo size is 600x80 pixels
-logo: "LOGO PEKOE WORLD.png"
+logo: "logo.png"
 
 # Plugins
 plugins:
