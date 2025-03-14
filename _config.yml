@@ -16,8 +16,8 @@ slogan: 'Official WorldMobile EarthNode'
 # The description is used on homepage and in the footer to quickly describe your website. Use a maximum of 150 characters for SEO-purposes.
 description: 'Your phone. Your data. Your rewards. Join the first private WorldMobile network that pays you back.'
 
-# The credits show up in the includes/_footer.html – It would be nice of you to leave a link to Phlow or Feeling Responsive as a thank you :)
-credits: '<p>Created by Pekoe ErthNode © 2025 Pekoe All rights reserved.</p>'
+# The credits show up in the includes/_footer.html – It would be nice of you to leave a link to Pekoe as a thank you :)
+credits: '<p>Created by Pekoe EarthNode © 2025 Pekoe, llc. All rights reserved.</p>'
 
 # Main author of the website
 # See > authors.yml
@@ -30,7 +30,7 @@ baseurl: '/earthnodepekoe'
 
 # This is for the editing function in _/includes/improve_content
 # Leave it empty if your site is not on GitHub/GitHub Pages
-improve_content: https://github.com/Phlow/feeling-responsive/edit/gh-pages
+improve_content: https://github.com/Pekoe/earthnodepekoe/edit/gh-pages
 
 # This URL points directly to the images directory making
 # things easier to link to images in posts and templates. It needs a slash at the end.
@@ -38,7 +38,7 @@ improve_content: https://github.com/Phlow/feeling-responsive/edit/gh-pages
 # Example: <img src="{{ site.urlimg }}{{ post.image.title }}" />
 # Markdown-Example for posts ![Image Text]({{ site.urlimg }}image.jpg)
 #
-urlimg: 'https://phlow.github.io/feeling-responsive/images/'
+urlimg: 'https://earthnodepekoe.github.io/earthnodepekoe/images/'
 
 
 # Logo size is 600x80 pixels
