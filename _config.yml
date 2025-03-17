@@ -38,7 +38,7 @@ improve_content: https://github.com/earthnodepekoe/earthnodepekoe/edit/gh-pages
 # Example: <img src="{{ site.urlimg }}{{ post.image.title }}" />
 # Markdown-Example for posts ![Image Text]({{ site.urlimg }}image.jpg)
 #
-img src="https://earthnodepekoe.github.io/earthnodepekoe/images/imagen.jpg" alt="Descripción"
+<img src="https://earthnodepekoe.github.io/earthnodepekoe/images/imagen.jpg" alt="Descripción">
 
 
 # Logo size is 600x80 pixels
