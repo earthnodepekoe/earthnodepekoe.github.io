@@ -10,11 +10,8 @@ format: frontpage
     </div><!-- /.row -->
 </div><!-- /#header-home -->
 
-
 {% comment %}
-*
 * First check, if widget is empty or not by checking if there is a title
-*
 {% endcomment %}
 <div class="row t60">
 	{% if page.widget1.image or page.widget1.video or page.widget1.title %}
@@ -30,39 +27,28 @@ format: frontpage
 	{% endif %}
 </div><!-- /.row -->
 
-
 {% comment %}
-*
 * First check, if there is a call for action-button
-*
 {% endcomment %}
-{% if page.callforaction.url contains 'http' %}
-  {% assign url = '' %}
-{% else %}
-  {% capture url %}{{ '/' }}{% endcapture %}
-{% endif %}
+{% assign url = page.callforaction.url | default: '/' %}
 {% if page.callforaction %}
     <div class="row t60 b60">
         <div class="small-12 text-center columns">
-            <a class="button large radius {{ page.callforaction.style }}" href="{{ url }}{{ page.callforaction.url }}"{% if page.callforaction.url contains 'http' %} target="_blank" {% endif %}>{{ page.callforaction.text }}</a>
+            <a class="button large radius {{ page.callforaction.style }}" href="{{ url }}"{% if url contains 'http' %} target="_blank" {% endif %}>{{ page.callforaction.text }}</a>
         </div><!-- /.small-12.columns -->
     </div><!-- /.row -->
 {% endif %}
 
-
 {% comment %}
-*
 * First check, if there are any posts at all
-*
 {% endcomment %}
-
 {% unless site.posts == empty %}
     <div class="row t30 b20 homepage">
         <div class="small-12 columns">
             {% for post in site.posts limit:1 %}
             {% if post.image.homepage %}
             <p>
-                <a href="{{ post.url }}" title="{{ post.title | escape_once }}"><img width="970" src="{{ site.urlimg }}{{ post.image.homepage }}" alt="{{ page.title | escape_once }}"></a>
+                <a href="{{ post.url }}" title="{{ post.title | escape_once }}"><img width="970" src="{{ post.image.homepage }}" alt="{{ post.title | escape_once }}"></a>
             </p>
 
             {% if post.image.caption_url and post.image.caption %}
@@ -77,7 +63,6 @@ format: frontpage
         </div><!-- /.small-12.columns -->
     </div><!-- /.row -->
 
-
     <div class="row">
         <div class="medium-6 columns">
             {% for post in site.posts limit:1 %}
@@ -90,7 +75,6 @@ format: frontpage
             {% endfor %}
         </div><!-- /.medium-6.columns -->
 
-
         <div class="medium-6 columns">
             <p><strong>{{ site.data.language.more_articles }}</strong></p>
             {% include list-posts entries='3' offset='1' %}
@@ -98,13 +82,10 @@ format: frontpage
     </div><!-- /.row -->
 {% endunless %}
 
-
 {% comment %}
-*
 * Finally, if there is content, spit it out.
-*
 {% endcomment %}
-
 <div class="row">
     {{ content }}
 </div><!-- /.row -->
+
