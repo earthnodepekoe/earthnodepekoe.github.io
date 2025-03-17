@@ -8,9 +8,9 @@
   <nav class="top-bar" role="navigation" data-topbar data-options="scrolltop: false">
     <ul class="title-area">
       <li class="name">
-      <h1 class="hide-for-large-up"><a href="{{ site.url }}{{ site.baseurl }}" class="icon-tree"> {{ site.title }}</a></h1>
-    </li>
-       <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+        <h1 class="hide-for-large-up"><a href="{{ site.url }}" class="icon-tree"> {{ site.title }}</a></h1>
+      </li>
+      <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
       <li class="toggle-topbar toggle-topbar-click menu-icon"><a><span>Nav</span></a></li>
     </ul>
     <section class="top-bar-section">
@@ -27,16 +27,16 @@
       <ul class="left">
         {% for link in site.data.navigation %}
 
-              {% if link.url contains 'http' %}
-                {% assign domain = '' %}
-                {% assign _baseurl = '' %}
-              {% elsif link.url == '#' %}
-                {% assign domain = '' %}
-                {% assign _baseurl = site.baseurl %}
-              {% else %}
-                {% assign domain = site.url %}
-                {% assign _baseurl = site.baseurl %}
-              {% endif %}
+          {% if link.url contains 'http' %}
+            {% assign domain = '' %}
+            {% assign _baseurl = '' %}
+          {% elsif link.url == '#' %}
+            {% assign domain = '' %}
+            {% assign _baseurl = '' %}
+          {% else %}
+            {% assign domain = site.url %}
+            {% assign _baseurl = '' %}
+          {% endif %}
 
           {% comment %}   If there are links for left side begin   {% endcomment %}
           {% if link.side == 'left' %}
@@ -52,18 +52,18 @@
               <li class="has-dropdown{% if link.url == page.url %} active{% endif %}">
                 <a {% if link.class %}class="{{link.class}}"{% endif %} href="{{ domain }}{{ _baseurl }}{{ link.url }}"{% if link.url contains 'http' %} target="_blank"{% endif %}>{{ link.title | escape }}</a>
 
-                  <ul class="dropdown">
-                    {% for dropdown_link in link.dropdown %}
+                <ul class="dropdown">
+                  {% for dropdown_link in link.dropdown %}
 
-                      {% if dropdown_link.url contains 'http' %}
-                        {% assign domain = '' %}
-                        {% else %}
-                        {% assign domain = site.url %}
-                      {% endif %}
+                    {% if dropdown_link.url contains 'http' %}
+                      {% assign domain = '' %}
+                    {% else %}
+                      {% assign domain = site.url %}
+                    {% endif %}
 
-                      <li><a {% if dropdown_link.class %}class="{{dropdown_link.class}}"{% endif %} href="{{ domain }}{{ _baseurl }}{{ dropdown_link.url }}"{% if dropdown_link.url contains 'http' %} target="_blank"{% endif %}>{{ dropdown_link.title | escape }}</a></li>
-                    {% endfor %}
-                  </ul>
+                    <li><a {% if dropdown_link.class %}class="{{dropdown_link.class}}"{% endif %} href="{{ domain }}{{ _baseurl }}{{ dropdown_link.url }}"{% if dropdown_link.url contains 'http' %} target="_blank"{% endif %}>{{ dropdown_link.title | escape }}</a></li>
+                  {% endfor %}
+                </ul>
 
               </li>
               <li class="divider"></li>
@@ -73,7 +73,7 @@
         {% comment %}   Second loop finished   {% endcomment %}
       </ul>
       
-      
+
 {% comment %}
 
     ____  _       __    __     _   __            _             __  _
@@ -87,18 +87,16 @@
       <ul class="right">
         {% for link in site.data.navigation %}
 
-              {% if link.url contains 'http' %}
-                {% assign domain = '' %}
-                {% assign _baseurl = '' %}
-              {% elsif link.url == '#' %}
-                {% assign domain = '' %}
-                {% assign _baseurl = site.baseurl %}
-              {% else %}
-                {% assign domain = site.url %}
-                {% assign _baseurl = site.baseurl %}
-              {% endif %}
-
-
+          {% if link.url contains 'http' %}
+            {% assign domain = '' %}
+            {% assign _baseurl = '' %}
+          {% elsif link.url == '#' %}
+            {% assign domain = '' %}
+            {% assign _baseurl = '' %}
+          {% else %}
+            {% assign domain = site.url %}
+            {% assign _baseurl = '' %}
+          {% endif %}
 
           {% comment %}   If there are links for right side begin   {% endcomment %}
           {% if link.side == 'right' %}
@@ -114,18 +112,18 @@
               <li class="has-dropdown{% if link.url == page.url %} active{% endif %}">
                 <a {% if link.class %}class="{{link.class}}"{% endif %} href="{{ domain }}{{ _baseurl }}{{ link.url }}"{% if link.url contains 'http' %} target="_blank"{% endif %}>{{ link.title | escape }}</a>
 
-                  <ul class="dropdown">
-                    {% for dropdown_link in link.dropdown %}
+                <ul class="dropdown">
+                  {% for dropdown_link in link.dropdown %}
 
-                      {% if dropdown_link.url contains 'http' %}
-                        {% assign domain = '' %}
-                        {% else %}
-                        {% assign domain = site.url %}
-                      {% endif %}
+                    {% if dropdown_link.url contains 'http' %}
+                      {% assign domain = '' %}
+                    {% else %}
+                      {% assign domain = site.url %}
+                    {% endif %}
 
-                      <li><a {% if dropdown_link.class %}class="{{dropdown_link.class}}"{% endif %} href="{{ domain }}{{ _baseurl }}{{ dropdown_link.url }}"{% if dropdown_link.url contains 'http' %} target="_blank"{% endif %}>{{ dropdown_link.title | escape }}</a></li>
-                    {% endfor %}
-                  </ul>
+                    <li><a {% if dropdown_link.class %}class="{{dropdown_link.class}}"{% endif %} href="{{ domain }}{{ _baseurl }}{{ dropdown_link.url }}"{% if dropdown_link.url contains 'http' %} target="_blank"{% endif %}>{{ dropdown_link.title | escape }}</a></li>
+                  {% endfor %}
+                </ul>
 
               </li>
             {% endif %}
@@ -137,3 +135,4 @@
     </section>
   </nav>
 </div><!-- /#navigation -->
+
