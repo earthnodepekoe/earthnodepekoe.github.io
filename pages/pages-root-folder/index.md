@@ -20,7 +20,7 @@ widget2:
 widget3:
   title: "Download Theme"
   url: 'https://github.com/Phlow/feeling-responsive'
-  image: 'widget-github-303x182.jpg'
+  image: widget-github-303x182.jpg
   text: '<em>Feeling Responsive</em> is free and licensed under a MIT License. Make it your own and start building. The code is well-documented and explains you how it works.'
 #
 # Use the call for action to show a button on the frontpage
