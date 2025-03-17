@@ -12,7 +12,7 @@
     {% elsif include.widget.url contains 'http' %}
       {{ include.widget.url }}
     {% else %}
-      {{ site.url }}{{ site.baseurl }}{{ include.widget.url }}
+      {{ include.widget.url }}
   {% endif %}
 {% endcapture %}
 
@@ -20,7 +20,7 @@
   {% if include.widget.image contains 'http' %}
     {{ include.widget.image }}
   {% else %}
-    {{ site.url }}{{ site.baseurl }}/images/{{ include.widget.image }}  <!-- Ruta corregida para imágenes -->
+    /images/{{ include.widget.image }}  <!-- Ruta corregida para imágenes -->
   {% endif %}
 {% endcapture %}
 
@@ -39,3 +39,4 @@
   {% if include.widget.text != empty %}<p>{{ include.widget.text }}</p>{% endif %}
   {% if widget_url != empty %}<p><a class="button tiny radius" href="{{ widget_url }}">{{ site.data.language.more }}</a></p>{% endif %}
 </div>
+
