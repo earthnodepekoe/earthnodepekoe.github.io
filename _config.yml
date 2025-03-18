@@ -1,60 +1,80 @@
-# ASCII-Font
-# http://patorjk.com/software/taag/#p=display&f=Slant&t=Phlow
-
-# Website Configuration
-
+# ASCII-Font › http://patorjk.com/software/taag/#p=display&f=Slant&t=Phlow
+#
+#      _____ _ __          _____      __  __  _
+#     / ___/(_) /____     / ___/___  / /_/ /_(_)___  ____ ______
+#     \__ \/ / __/ _ \    \__ \/ _ \/ __/ __/ / __ \/ __ / ___/
+#    ___/ / / /_/  __/   ___/ /  __/ /_/ /_/ / / / / /_/ (__  )
+#   /____/_/\__/\___/   /____/\___/\__/\__/_/_/ /_/\__, /____/
+#                                                 /____/
+#
+# Title of your website
 title: 'Pekoe'
+
+# The slogan describes your website and is used on homepage in <title> and other important places
 slogan: 'Official WorldMobile EarthNode'
+
+# The description is used on homepage and in the footer to quickly describe your website. Use a maximum of 150 characters for SEO-purposes.
 description: 'Your phone. Your data. Your rewards. Join the first private WorldMobile network that pays you back.'
-credits: '<p>Created by Pekoe EarthNode © 2025 Pekoe, LLC. All rights reserved.</p>'
+
+# The credits show up in the includes/_footer.html – It would be nice of you to leave a link to Pekoe as a thank you :)
+credits: '<p>Created by Pekoe EarthNode © 2025 Pekoe, llc. All rights reserved.</p>'
+
+# Main author of the website
+# See > authors.yml
 author: Pekoe EarthNode
 
-# Site URL Configuration
+# This URL is the main address for absolute links. Don't include a slash at the end.
+#
 url: 'https://earthnodepekoe.github.io'
-baseurl: ''
+baseurl:
 
-# Content Improvement (GitHub Edit Link)
-improve_content: 'https://github.com/earthnodepekoe/earthnodepekoe/edit/gh-pages'
+# This is for the editing function in _/includes/improve_content
+# Leave it empty if your site is not on GitHub/GitHub Pages
+improve_content: https://github.com/earthnodepekoe/earthnodepekoe/edit/gh-pages
 
-# Image Directory URL
-urlimg: '/images/'
-
-# Logo
-logo: 'logo.png'
+# Logo size is 600x80 pixels
+logo: "logo.png"
 
 # Plugins
 plugins:
-  - jekyll-asciidoc
-  - jekyll-gist
-  - jekyll-paginate
+    - jekyll-asciidoc
+    - jekyll-gist
+    - jekyll-paginate
 
-# Pagination
-paginate: 5
-paginate_path: 'blog/page:num'
+#       ____              _             __  _
+#      / __ \____ _____ _(_)___  ____ _/ /_(_)___  ____
+#     / /_/ / __ / __ / / __ \/ __ / __/ / __ \/ __ \
+#    / ____/ /_/ / /_/ / / / / / /_/ / /_/ / /_/ / / / /
+#   /_/    \__,_/\__, /_/_/ /_/\__,_/\__/_/\____/_/ /_/
+#               /____/
+#
+paginate: 5                      # Paginates all X entries
+paginate_path: "blog/page:num"   # Pagination path › Important for blog page in /blog/ to work
 
-# Markdown and Permalinks
-markdown: kramdown
-permalink: '/:categories/:title/'
-highlight: rouge
-excerpt_separator: "<!--more-->"
-include:
-  - '.htaccess'
+# Theme works best with Kramdown (using the table of contents function)
+markdown           : kramdown
+permalink          : /:categories/:title/
+highlight          : rouge
+excerpt_separator  : "<!--more-->"
+include            : ['.htaccess']
+# Exclude these files from your production _site
 exclude:
-  - .sass-cache
-  - Gemfile
-  - Gemfile.lock
-  - LICENSE
-  - README.md
-  - INSTALL.md
-  - vendor
+    - .sass-cache
+    - Gemfile
+    - Gemfile.lock
+    - LICENSE
+    - README.md
+    - INSTALL.md
+    - vendor
 
-# Language
+# The language setting is used in /includes/header.html for html-settings
 language: 'en'
 
-# HTML Compression
+# Used › default.html front-matter and compress.html
+# Options › http://jch.penibelst.de
 compress_html:
   clippings: all
-  comments: ['<!-- ', ' -->']
+  comments: ["<!-- ", " -->"]
   endings: all
   profile: false
   ignore:
@@ -62,54 +82,55 @@ compress_html:
 
 # Default Settings
 defaults:
-  - scope:
+  -
+    scope:
       path: ''
       type: 'pages'
     values:
       show_meta: false
       comments: false
-      author: Pekoe EarthNode
-  - scope:
+      author: phlow
+  -
+    scope:
       path: ''
       type: 'posts'
     values:
       show_meta: true
       comments: false
-      author: Pekoe EarthNode
+      author: phlow
 
-# Webmaster Tools Verification
-google_site_verification: 'Vk0IOJ2jwG_qEoG7fuEXYqv0m2rLa8P778Fi_GrsgEQ'
-bing_webmastertools_id: '0FB4C028ABCF07C908C54386ABD2D97F'
+# Verify Website to Webmaster Tools
+google_site_verification        : 'Vk0IOJ2jwG_qEoG7fuEXYqv0m2rLa8P778Fi_GrsgEQ'
+bing_webmastertools_id          : '0FB4C028ABCF07C908C54386ABD2D97F'
 
 # Favicon and Touch Icons
-favicon-32x32: 'favicon-32x32.png'
-touch-icon-192x192: 'touch-icon-192x192.png'
-apple-touch-icon-180x180: 'apple-touch-icon-180x180-precomposed.png'
-msapplication_tileimage: 'msapplication_tileimage.png'
-msapplication_tilecolor: '#fabb00'
+favicon-32x32                        : 'favicon-32x32.png'
+touch-icon-192x192                   : 'touch-icon-192x192.png'
+apple-touch-icon-180x180-precomposed : 'apple-touch-icon-180x180-precomposed.png'
+apple-touch-icon-152x152-precomposed : 'apple-touch-icon-152x152-precomposed.png'
+apple-touch-icon-144x144-precomposed : 'apple-touch-icon-144x144-precomposed.png'
+apple-touch-icon-120x120-precomposed : 'apple-touch-icon-120x120-precomposed.png'
+apple-touch-icon-114x114-precomposed : 'apple-touch-icon-114x114-precomposed.png'
+apple-touch-icon-76x76-precomposed   : 'apple-touch-icon-76x76-precomposed.png'
+apple-touch-icon-72x72-precomposed   : 'apple-touch-icon-72x72-precomposed.png'
+apple-touch-icon-precomposed         : 'apple-touch-icon-precomposed.png'
+msapplication_tileimage              : 'msapplication_tileimage.png'
+msapplication_tilecolor              : '#fabb00'
 
-# Open Graph Metadata (Facebook Optimization)
-og_image: 'http://images.phlow.de/phlow/phlow_de-logo-512x.png'
-og_locale: 'en_EN'
-og_type: 'website'
+# Facebook-Optimization
+og_image                             : 'http://images.phlow.de/phlow/phlow_de-logo-512x.png'
+og_locale                            : 'en_EN'
+og_type                              : 'website'
 
-# Social Media Links
+# Social Media
 socialmedia:
-  twitter: 'phlow'
-  facebook: 'phlow.media'
+    twitter   : phlow
+    facebook  : phlow.media
 
-# SASS Configuration
-sass:
-  sass_dir: '_sass'
-  style: :compressed
-
-# Google Analytics (Optional)
-# google_analytics_tracking_id:
-
-# AsciiDoctor Configuration
+# Asciidoctor Configuration
 asciidoctor-enabled: false
 asciidoctor:
-  description: ''
+  description: 
   attributes:
     source-highlighter: coderay
     coderay-css: style
