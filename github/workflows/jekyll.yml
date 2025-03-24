@@ -8,6 +8,11 @@ on:
     branches:
       - main
 
+# Evita que este workflow se ejecute al mismo tiempo que otros workflows
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
