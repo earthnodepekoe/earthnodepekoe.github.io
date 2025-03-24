@@ -19,17 +19,18 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4 # Actualiza a la última versión
 
       - name: Set up Ruby
-        uses: ruby/setup-ruby@v1
+        uses: ruby/setup-ruby@v1 # La última versión de ruby/setup-ruby
         with:
-          ruby-version: '3.0' # Usa Ruby 3.0 para compatibilidad con tu Gemfile
+          ruby-version: '3.2' # Actualiza a Ruby 3.2, compatible con Jekyll 4.3.x
           bundler-cache: true
 
       - name: Install dependencies
         run: |
-          gem install bundler
+          gem update --system # Actualiza RubyGems a la última versión
+          gem install bundler --no-document # Instala la última versión de Bundler
           bundle install
 
       - name: Build the site
@@ -37,7 +38,7 @@ jobs:
 
       - name: Deploy to GitHub Pages
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4 # Actualiza a la última versión
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./_site
