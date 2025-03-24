@@ -37,3 +37,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./_site
           publish_branch: gh-pages # Publica en la rama gh-pages
+          force_orphan: true # Fuerza la creación de la rama gh-pages como una rama huérfana
