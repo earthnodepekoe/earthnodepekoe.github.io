@@ -1,0 +1,46 @@
+name: Build and Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+# Evita que este workflow se ejecute al mismo tiempo que otros workflows
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4 # Actualiza a la última versión
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1 # La última versión de ruby/setup-ruby
+        with:
+          ruby-version: '3.2' # Actualiza a Ruby 3.2, compatible con Jekyll 4.3.x
+          bundler-cache: true
+
+      - name: Install dependencies
+        run: |
+          gem update --system # Actualiza RubyGems a la última versión
+          gem install bundler --no-document # Instala la última versión de Bundler
+          bundle install
+
+      - name: Build the site
+        run: bundle exec jekyll build
+
+      - name: Deploy to GitHub Pages
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        uses: peaceiris/actions-gh-pages@v4 # Actualiza a la última versión
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
+          publish_branch: gh-pages # Publica en la rama gh-pages
+          force_orphan: true # Fuerza la creación de la rama gh-pages como una rama huérfana
