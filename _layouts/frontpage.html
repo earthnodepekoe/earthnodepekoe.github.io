@@ -3,37 +3,92 @@
 <!doctype html>
 <html class="no-js" lang="{{ site.language }}">
 {% include _head.html %}
-<body>
-    <!--[if lte IE 9]>
-        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-    <![endif]-->
+<body id="top-of-page" class="frontpage">
+    {% include _navigation.html %}
 
-    {% include _header.html %}
-
-    {% if page.header_image %}
-        <div class="hero" style="background-image: url('{{ site.urlimg }}{{ page.header_image }}'); width: 100%; height: 400px; background-size: cover; background-position: center;">
+    {% if page.header.image_fullwidth %}
+        <div id="masthead">
             <div class="row">
-                <div class="large-12 columns">
-                    <h1 style="color: white; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">{{ page.title }}</h1>
+                <div class="small-12 columns">
+                    <a id="logo" href="{{ site.url }}{{ site.baseurl }}/" title="{{ site.name }} – {{ site.description }}">
+                        <img src="{{ site.urlimg }}{{ site.logo }}" alt="{{ site.name }} – {{ site.description }}">
+                    </a>
                 </div>
             </div>
         </div>
+        <script>
+            $("#masthead").backstretch("{{ site.urlimg }}{{ page.header.image_fullwidth }}", {fade: 700});
+        </script>
     {% else %}
-        <div class="hero">
+        <div id="masthead-no-image-header">
             <div class="row">
-                <div class="large-12 columns">
-                    <h1 style="color: white; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">{{ page.title }}</h1>
+                <div class="small-12 columns">
+                    <a id="logo" href="{{ site.url }}{{ site.baseurl }}/" title="{{ site.name }} – {{ site.description }}">
+                        <img src="{{ site.urlimg }}{{ site.logo }}" alt="{{ site.name }} – {{ site.description }}">
+                    </a>
                 </div>
             </div>
         </div>
     {% endif %}
 
-    <div id="main-content" class="row">
-        <main class="large-9 medium-8 columns">
-            {{ content }}
-        </main>
-        {% include _sidebar.right-single.html %}
+    <div id="header-home">
+        <div class="row">
+            <div class="small-12 columns">
+            </div>
+        </div>
     </div>
+
+    <div class="row t60">
+        <div class="medium-4 columns frontpage-widget">
+            {% if page.widget1.image %}
+                <a href="{{ page.widget1.url }}">
+                    <img src="{{ site.urlimg }}{{ page.widget1.image }}" alt="" />
+                </a>
+            {% endif %}
+            {% if page.widget1.video %}
+                {{ page.widget1.video }}
+            {% endif %}
+            <h2 class="font-size-h3 t10">{{ page.widget1.title }}</h2>
+            <p>{{ page.widget1.text }}</p>
+            <p><a class="button tiny radius" href="{{ page.widget1.url }}">{{ site.data.language.more }}</a></p>
+        </div>
+        <div class="medium-4 columns frontpage-widget">
+            {% if page.widget2.image %}
+                <a href="{{ page.widget2.url }}">
+                    <img src="{{ site.urlimg }}{{ page.widget2.image }}" alt="" />
+                </a>
+            {% endif %}
+            {% if page.widget2.video %}
+                {{ page.widget2.video }}
+            {% endif %}
+            <h2 class="font-size-h3 t10">{{ page.widget2.title }}</h2>
+            <p>{{ page.widget2.text }}</p>
+            <p><a class="button tiny radius" href="{{ page.widget2.url }}">{{ site.data.language.more }}</a></p>
+        </div>
+        <div class="medium-4 columns frontpage-widget">
+            {% if page.widget3.image %}
+                <a href="{{ page.widget3.url }}">
+                    <img src="{{ site.urlimg }}{{ page.widget3.image }}" alt="" />
+                </a>
+            {% endif %}
+            {% if page.widget3.video %}
+                {{ page.widget3.video }}
+            {% endif %}
+            <h2 class="font-size-h3 t10">{{ page.widget3.title }}</h2>
+            <p>{{ page.widget3.text }}</p>
+            <p><a class="button tiny radius" href="{{ page.widget3.url }}">{{ site.data.language.more }}</a></p>
+        </div>
+    </div>
+
+    {% if page.callforaction.url %}
+        <div class="row t60 b60">
+            <div class="small-12 text-center columns">
+                <a class="button large radius {{ page.callforaction.style }}" href="{{ page.callforaction.url }}"{% if page.callforaction.url contains 'http' %} target="_blank" {% endif %}>{{ page.callforaction.text }}</a>
+            </div>
+        </div>
+    {% endif %}
+
+    {{ content }}
 
     {% include _footer.html %}
     {% include _scripts.html %}
