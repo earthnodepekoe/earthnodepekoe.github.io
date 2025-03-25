@@ -1,96 +1,52 @@
 ---
+#
+# Use the widgets beneath and the content will be
+# inserted automagically in the webpage. To make
+# this work, you have to use › layout: frontpage
+#
+layout: frontpage
+header:
+  image_fullwidth: header_unsplash_12.jpg
+widget1:
+  title: "Blog & Portfolio"
+  url: 'http://phlow.github.io/feeling-responsive/blog/'
+  image: widget-1-302x182.jpg
+  text: 'Every good portfolio website has a blog with fresh news, thoughts and develop­ments of your activities. <em>Feeling Responsive</em> offers you a fully functional blog with an archive page to give readers a quick overview of all your posts.'
+widget2:
+  title: "Why use this theme?"
+  url: 'http://phlow.github.io/feeling-responsive/info/'
+  text: '<em>Feeling Responsive</em> is heavily customizable.<br/>1. Language-Support :)<br/>2. Optimized for speed and it\'s responsive.<br/>3. Built on <a href="http://foundation.zurb.com/">Foundation Framework</a>.<br/>4. Seven different Headers.<br/>5. Customizable navigation, footer,...'
+  video: '<a href="#" data-reveal-id="videoModal"><img src="http://phlow.github.io/feeling-responsive/images/start-video-feeling-responsive-302x182.jpg" width="302" height="182" alt=""/></a>'
+widget3:
+  title: "Download Theme"
+  url: 'https://github.com/Phlow/feeling-responsive'
+  image: widget-github-303x182.jpg
+  text: '<em>Feeling Responsive</em> is free and licensed under a MIT License. Make it your own and start building. The code is well-documented and explains you how it works.'
+#
+# Use the call for action to show a button on the frontpage
+#
+# To make internal links, just use a permalink like this
+# url: /getting-started/
+#
+# To style the button in different colors, use no value
+# to use the main color or success, alert or secondary.
+# To change colors see sass/_01_settings_colors.scss
+#
+callforaction:
+  url: https://tinyletter.com/feeling-responsive
+  text: Inform me about new updates and features ›
+  style: alert
+permalink: /index.html
+#
+# This is a nasty hack to make the navigation highlight
+# this page as active in the topbar navigation
+#
+homepage: true
 ---
-<!doctype html>
-<html class="no-js" lang="{{ site.language }}">
-{% include _head.html %}
-<body id="top-of-page" class="frontpage">
-    {% include _navigation.html %}
 
-    {% if page.header.image_fullwidth %}
-        <div id="masthead">
-            <div class="row">
-                <div class="small-12 columns">
-                    <a id="logo" href="{{ site.url }}{{ site.baseurl }}/" title="{{ site.name }} – {{ site.description }}">
-                        <img src="{{ site.urlimg }}{{ site.logo }}" alt="{{ site.name }} – {{ site.description }}">
-                    </a>
-                </div>
-            </div>
-        </div>
-        <script>
-            $("#masthead").backstretch("{{ site.urlimg }}{{ page.header.image_fullwidth }}", {fade: 700});
-        </script>
-    {% else %}
-        <div id="masthead-no-image-header">
-            <div class="row">
-                <div class="small-12 columns">
-                    <a id="logo" href="{{ site.url }}{{ site.baseurl }}/" title="{{ site.name }} – {{ site.description }}">
-                        <img src="{{ site.urlimg }}{{ site.logo }}" alt="{{ site.name }} – {{ site.description }}">
-                    </a>
-                </div>
-            </div>
-        </div>
-    {% endif %}
-
-    <div id="header-home">
-        <div class="row">
-            <div class="small-12 columns">
-            </div>
-        </div>
-    </div>
-
-    <div class="row t60">
-        <div class="medium-4 columns frontpage-widget">
-            {% if page.widget1.image %}
-                <a href="{{ page.widget1.url }}">
-                    <img src="{{ site.urlimg }}{{ page.widget1.image }}" alt="" />
-                </a>
-            {% endif %}
-            {% if page.widget1.video %}
-                {{ page.widget1.video }}
-            {% endif %}
-            <h2 class="font-size-h3 t10">{{ page.widget1.title }}</h2>
-            <p>{{ page.widget1.text }}</p>
-            <p><a class="button tiny radius" href="{{ page.widget1.url }}">{{ site.data.language.more }}</a></p>
-        </div>
-        <div class="medium-4 columns frontpage-widget">
-            {% if page.widget2.image %}
-                <a href="{{ page.widget2.url }}">
-                    <img src="{{ site.urlimg }}{{ page.widget2.image }}" alt="" />
-                </a>
-            {% endif %}
-            {% if page.widget2.video %}
-                {{ page.widget2.video }}
-            {% endif %}
-            <h2 class="font-size-h3 t10">{{ page.widget2.title }}</h2>
-            <p>{{ page.widget2.text }}</p>
-            <p><a class="button tiny radius" href="{{ page.widget2.url }}">{{ site.data.language.more }}</a></p>
-        </div>
-        <div class="medium-4 columns frontpage-widget">
-            {% if page.widget3.image %}
-                <a href="{{ page.widget3.url }}">
-                    <img src="{{ site.urlimg }}{{ page.widget3.image }}" alt="" />
-                </a>
-            {% endif %}
-            {% if page.widget3.video %}
-                {{ page.widget3.video }}
-            {% endif %}
-            <h2 class="font-size-h3 t10">{{ page.widget3.title }}</h2>
-            <p>{{ page.widget3.text }}</p>
-            <p><a class="button tiny radius" href="{{ page.widget3.url }}">{{ site.data.language.more }}</a></p>
-        </div>
-    </div>
-
-    {% if page.callforaction.url %}
-        <div class="row t60 b60">
-            <div class="small-12 text-center columns">
-                <a class="button large radius {{ page.callforaction.style }}" href="{{ page.callforaction.url }}"{% if page.callforaction.url contains 'http' %} target="_blank" {% endif %}>{{ page.callforaction.text }}</a>
-            </div>
-        </div>
-    {% endif %}
-
-    {{ content }}
-
-    {% include _footer.html %}
-    {% include _scripts.html %}
-</body>
-</html>
+<div id="videoModal" class="reveal-modal large" data-reveal="">
+  <div class="flex-video widescreen vimeo" style="display: block;">
+    <iframe width="1280" height="720" src="https://www.youtube.com/embed/3b5zCFSmVvU" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <a class="close-reveal-modal">×</a>
+</div>
