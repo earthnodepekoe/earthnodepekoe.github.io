@@ -16,9 +16,6 @@
                 </div>
             </div>
         </div>
-        <script>
-            $("#masthead").backstretch("{{ site.urlimg }}{{ page.header.image_fullwidth }}", {fade: 700});
-        </script>
     {% else %}
         <div id="masthead-no-image-header">
             <div class="row">
@@ -92,5 +89,13 @@
 
     {% include _footer.html %}
     {% include _scripts.html %}
+
+    {% if page.header.image_fullwidth %}
+        <script>
+            $(document).ready(function() {
+                $("#masthead").backstretch("{{ site.urlimg }}{{ page.header.image_fullwidth }}", {fade: 700});
+            });
+        </script>
+    {% endif %}
 </body>
 </html>
