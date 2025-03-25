@@ -15,6 +15,7 @@
 - Footer
 - Subfooter
 - CSS-Classes to add margin at top or bottom
+- Hero Section
 
 */
 
@@ -361,3 +362,21 @@ body.video cite { color: #fff; }
 .pr5  { padding-right: 5px !important; }
 .pr10 { padding-right: 10px !important; }
 .pr20 { padding-right: 20px !important; }
+
+
+/* Hero Section
+------------------------------------------------------------------- */
+
+.hero {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 400px;
+  @include breakpoint($medium) {
+    height: 500px;
+  }
+  @include breakpoint($large) {
+    height: 600px;
+  }
+}
