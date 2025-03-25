@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="/assets/xslt/atom.xslt" ?>
+<?xml-stylesheet type="text/css" href="/assets/css/atom.css" ?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+	<id>https://earthnodepekoe.github.io/</id>
+	<title>Pekoe</title>
+	<updated>2025-03-25T07:47:14+00:00</updated>
+
+	<subtitle>Your phone. Your data. Your rewards. Join the first private, user‑owned WorldMobile network that pays you back.</subtitle>
+
+	
+		
+		<author>
+			
+				<name>Pekoe</name>
+			
+			
+			
+		</author>
+	
+
+	<link href="https://earthnodepekoe.github.io/atom.xml" rel="self" type="application/rss+xml" />
+	<link href="https://earthnodepekoe.github.io/" rel="alternate" type="text/html" />
+
+	<generator uri="http://jekyllrb.com" version="4.4.1">Jekyll</generator>
+
+	
+</feed>
