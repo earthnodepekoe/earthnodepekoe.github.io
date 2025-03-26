@@ -3,9 +3,9 @@ layout: page
 #
 # Content
 #
-subheadline: "Video & Music Player"
-title: "Play Audio & Video with media&shy;element.js"
-teaser: "Do you like music? Or are you a podcaster? Do you want to stream your videos in a nice player? Than you likely will like the integration of <em>mediaelement.js</em>. It enables you to play music and stream video in a consistent player that looks in each browser delicious. It even works in IE6-8."
+subheadline: "Video & Documents"
+title: "World Mobile at MWC25: Cementing Our Leadership in Decentralized Connectivity"
+teaser: "At MWC25 Barcelona, World Mobile solidified our position as the leader in decentralized connectivity - signing new parterships, gaining GSMA recognition, and proving that the future of telecom belongs to the people, not corporations."
 categories:
   - design
 tags:
@@ -18,7 +18,7 @@ tags:
 header: no
 image:
     title: pekoewmen.jpg
-    thumb: mediaplayer_js-thumb.jpg
+    thumb: pekoewmen.jpg
     homepage: pekoewmen.jpg
     caption: Photo by WorldMobile
     caption_url: 
