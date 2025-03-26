@@ -7,6 +7,10 @@
 layout: frontpage
 header:
   image_fullwidth: pekoex.jpg
+
+  ## Modular Scale
+
+  
 widget1:
   title: "Revolutionizing how the world connects"
   url: 'https://earthnodepekoe.github.io/blog/'
