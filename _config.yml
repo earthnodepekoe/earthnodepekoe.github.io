@@ -17,7 +17,7 @@ slogan: 'Official WorldMobile EarthNode'
 description: 'Your phone. Your data. Your rewards. Join the first private, user‑owned WorldMobile network that pays you back.'
 
 # The credits show up in the includes/_footer.html – It would be nice of you to leave a link to Phlow or Feeling Responsive as a thank you :)
-credits: '<p>Created by Pekoe EarthNode ©2025 PEKOE All rights reserved.</p>'
+credits: '<p>By Pekoe EarthNode ©2025 PEKOE All rights reserved.</p>'
 
 # Main author of the website
 # See > authors.yml
@@ -178,8 +178,8 @@ og_type                              : 'website'
 #
 
 socialmedia:
-    twitter   : phlow
-    facebook  : phlow.media
+    twitter   : pekoe
+    facebook  : pekoe.media
 
 #        ____  _
 #       / __ \(_)________ ___  _______
