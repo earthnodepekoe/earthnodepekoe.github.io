@@ -16,7 +16,7 @@ widget1:
   Enough is enough. It’s time for a mobile network that works for you, not against you.'
 widget2:
   title: "Why stake with us?"
-  url: 'https://youtu.be/xjF5iXcAaSY?feature=shared'
+  url: 'https://earthnodepekoe.github.io/info/'
   text: '<em>Feeling Responsive</em> is heavily customizable.<br/>1. Reliable Infrastructure – Our node is monitored 24/7 to ensure uptime and efficiency.<br/>2. Decentralization First – We uphold the true spirit of blockchain, contributing to a robust and distributed World Mobile ecosystem.<br/>3. Impact Staking – Your rewards fuel real-world change by connecting tea-growing communities to the future.<br/>4. Transparency & Community Focused – Regular updates, governance participation, and an open communication policy.'
   video: '<a href="#" data-reveal-id="videoModal"><img src="https://earthnodepekoe.github.io/images/wellcome.jpg" width="302" height="182" alt=""/></a>'
 widget3:
