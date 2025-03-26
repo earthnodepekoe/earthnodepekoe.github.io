@@ -9,8 +9,9 @@ header:
   image_fullwidth: pekoex.jpg
 
   ## Modular Scale
+*Silence is beautiful.* Sometimes you just want no distractions at all. Whether you like the content to speak for itself or enjoy pure typography on a plain background: *Feeling Responsive* got you covered. Just say *no* like this:
+<!--more-->
 
-  
 widget1:
   title: "Revolutionizing how the world connects"
   url: 'https://earthnodepekoe.github.io/blog/'
