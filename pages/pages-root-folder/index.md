@@ -43,12 +43,13 @@ permalink: /index.html
 # This is a nasty hack to make the navigation highlight
 # this page as active in the topbar navigation
 #
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xjF5iXcAaSY?si=MhfNvbqh4wIYf-lH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 homepage: true
 ---
 
 <div id="videoModal" class="reveal-modal large" data-reveal="">
   <div class="flex-video widescreen vimeo" style="display: block;">
-    <iframe width="1280" height="720" src="https://youtu.be/xjF5iXcAaSY" frameborder="0" allowfullscreen></iframe>
+    <iframe width="1280" height="720" src="https://youtu.be/xjF5iXcAaSY?feature=shared" frameborder="0" allowfullscreen></iframe>
   </div>
   <a class="close-reveal-modal">&#215;</a>
 </div>
