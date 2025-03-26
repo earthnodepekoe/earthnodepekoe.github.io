@@ -8,10 +8,14 @@ layout: frontpage
 header:
   image_fullwidth: pekoex.jpg
 widget1:
-  title: "Blog & Portfolio"
+  title: "Revolutionizing how the world connects"
   url: 'https://earthnodepekoe.github.io/blog/'
   image: widget-1-302x182.jpg
-  text: 'Every good portfolio website has a blog with fresh news, thoughts and develop&shy;ments of your activities. <em>Feeling Responsive</em> offers you a fully functional blog with an archive page to give readers a quick overview of all your posts.'
+  text: 'Innovation should serve humanity—not corporations. Mobile networks are essential in today’s world, yet we’ve surrendered control to Big Wireless, which profits from our data while leaving half the world disconnected and many major cities with unreliable coverage. 
+  
+  The digital world is evolving, but mobile networks remain stuck in the past. You’re paying more for less, with limited coverage and your personal data being treated like a commodity. Privacy is a right, not a privilege. 
+  
+  Enough is enough. It’s time for a mobile network that works for you, not against you.'
 widget2:
   title: "Why use this theme?"
   url: 'https://earthnodepekoe.github.io/info/'
