@@ -65,7 +65,13 @@ MWC25 was a launchpad for what comes next. The conversations, agreements, and co
 mediaplayer: true
 ~~~
 
-To use the player just use some HTML5-magic like...
+One of the most significant outcomes was the strengthening of relationships with regulators and industry leaders who see World Mobile as a key player in the future of telecom.  
+
+“It was a joy to be at MWC and heralded by the GSMA, recognized by our blockchain and web3 activities. The interest shown by telecom companies, MNOs, and hardware providers in our work was inspiring, especially due to the work we’ve done with the GSMA. The highlight for me was signing some exclusive deals for adoption and partnerships that will enable us to take connectivity to the next level in the months and years to come.” - Micky Watkins, CEO, World Mobile
+“MWC25 in one word? Game-changing.” - Christian Rees, Nevada Regional Manager, World Mobile
+The telecom world is waking up to what we’ve known all along - connectivity doesn’t belong to corporations. It belongs to the people.
+
+It’s time to reclaim power over our networks. The future of connectivity is decentralized. And we are making that happen.
 
 
 
