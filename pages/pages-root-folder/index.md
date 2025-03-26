@@ -23,10 +23,7 @@ widget3:
   title: "A mobile network that puts you in control"
   url: 'https://github.com/Phlow/feeling-responsive'
   image: movil 300x200.jpg
-  text: 'We’re building a decentralized mobile network—owned and operated by the people, for the people, everywhere. From bustling cities to the most remote corners of the world, we’re connecting everyone, ensuring no one is left behind. This is connectivity on your terms. Join the movement and reclaim power over your mobile experience. 
-  
-  
-  Imagine a mobile network that delivers reliable connectivity everywhere, a network that rewards you for participating and gives you power over your privacy and data.'
+  text: 'We’re building a decentralized mobile network—owned and operated by the people, for the people, everywhere. From bustling cities to the most remote corners of the world, we’re connecting everyone, ensuring no one is left behind. This is connectivity on your terms. Join the movement and reclaim power over your mobile experience. Imagine a mobile network that delivers reliable connectivity everywhere, a network that rewards you for participating and gives you power over your privacy and data.'
 #
 # Use the call for action to show a button on the frontpage
 #
@@ -39,8 +36,8 @@ widget3:
 #
 callforaction:
   url: https://earthnodepekoe.github.io
-  text: STAKE NOW WMTx ›
-  style: alert
+  text: STAKE NOW WMTx
+  style: info
 permalink: /index.html
 #
 # This is a nasty hack to make the navigation highlight
