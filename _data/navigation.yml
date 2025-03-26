@@ -73,3 +73,7 @@
 - title: "Contact"
   url: "/contact/"
   side: right
+
+- title: Plantation
+  url: "/Plantation/"
+  side: left
