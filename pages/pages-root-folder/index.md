@@ -17,7 +17,7 @@ widget1:
 widget2:
   title: "Why stake with us?"
   url: 'https://earthnodepekoe.github.io/info/'
-  text: '<em>Feeling Responsive</em> is heavily customizable.<br/>1. Language-Support :)<br/>2. Optimized for speed and it&#39;s responsive.<br/>3. Built on <a href="http://foundation.zurb.com/">Foundation Framework</a>.<br/>4. Seven different Headers.<br/>5. Customizable navigation, footer,...'
+  text: '<em>Feeling Responsive</em> is heavily customizable.<br/>1. Reliable Infrastructure – Our node is monitored 24/7 to ensure uptime and efficiency.<br/>2. Decentralization First – We uphold the true spirit of blockchain, contributing to a robust and distributed World Mobile ecosystem.<br/>3. Impact Staking – Your rewards fuel real-world change by connecting tea-growing communities to the future.<br/>4. Transparency & Community Focused – Regular updates, governance participation, and an open communication policy.'
   video: '<a href="#" data-reveal-id="videoModal"><img src="https://earthnodepekoe.github.io/images/start-video-feeling-responsive-302x182.jpg" width="302" height="182" alt=""/></a>'
 widget3:
   title: "A mobile network that puts you in control"
