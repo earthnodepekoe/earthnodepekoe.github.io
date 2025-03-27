@@ -5,9 +5,9 @@
 # this work, you have to use › layout: frontpage
 #
 layout: frontpage
-title               : "Este es el título"
-subheadline         : "Esta es la subheadline"
-teaser              : "Todo esto es el teaser que quieras."
+title               : "PEKOE EARTHNODE"
+subheadline         : "Official WorldMobile EarthNode"
+teaser              : "World Mobile Chain is the first dedicated telecoms blockchain. An EVM-compatible Layer 3, built on Base, enabling fast, secure and affordable transactions, with easy-to-deploy decentralized applications."
 header:
   image_fullwidth: pekoex.jpg
 widget1:
