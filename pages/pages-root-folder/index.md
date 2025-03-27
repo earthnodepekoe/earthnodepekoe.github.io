@@ -40,7 +40,7 @@ widget3:
 callforaction:
   url: https://earthnodepekoe.github.io
   text: STAKE NOW WMTx
-  style: info
+  style: terminal
 permalink: /index.html
 #
 # This is a nasty hack to make the navigation highlight
