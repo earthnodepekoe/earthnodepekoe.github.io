@@ -5,9 +5,9 @@
 # this work, you have to use › layout: frontpage
 #
 layout: frontpage
-title               : "Getting Started in 10 Steps"
-subheadline         : "A Step-by-Step Guide"
-teaser              : "This step-by-step guide helps you to customize Feeling Responsive to your needs."
+title               : "Este es el título"
+subheadline         : "Esta es la subheadline"
+teaser              : "Todo esto es el teaser que quieras."
 header:
   image_fullwidth: pekoex.jpg
 widget1:
