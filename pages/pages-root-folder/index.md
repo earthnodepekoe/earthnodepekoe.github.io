@@ -19,12 +19,12 @@ widget1:
   Enough is enough. It’s time for a mobile network that works for you, not against you.'
 widget2:
   title: "Why stake with us?"
-  url: 'https://earthnodepekoe.github.io/info/'
+  url: '/getting-started/'
   text: '<em>Pekoe, Official WorldMobile EarthNode</em> <br/>1. Reliable Infrastructure – Our node is monitored 24/7 to ensure uptime and efficiency.<br/>2. Decentralization First – We uphold the true spirit of blockchain, contributing to a robust and distributed World Mobile ecosystem.<br/>3. Impact Staking – Your rewards fuel real-world change by connecting tea-growing communities to the future.<br/>4. Transparency & Community Focused – Regular updates, governance participation, and an open communication policy.'
   video: '<a href="#" data-reveal-id="videoModal"><img src="https://earthnodepekoe.github.io/images/wellcome.jpg" width="302" height="182" alt=""/></a>'
 widget3:
   title: "A mobile network that puts you in control"
-  url: 'https://github.com/Phlow/feeling-responsive'
+  url: 'https://earthnodepekoe.github.io/blog/'
   image: movil 300x200.jpg
   text: 'We’re building a decentralized mobile network—owned and operated by the people, for the people, everywhere. From bustling cities to the most remote corners of the world, we’re connecting everyone, ensuring no one is left behind. This is connectivity on your terms. Join the movement and reclaim power over your mobile experience. Imagine a mobile network that delivers reliable connectivity everywhere, a network that rewards you for participating and gives you power over your privacy and data.'
 #
