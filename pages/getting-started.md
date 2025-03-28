@@ -5,7 +5,7 @@ title               : "Getting Started in 10 Steps"
 subheadline         : "A Step-by-Step Staking Guide"
 teaser              : "This step-by-step guide helps you to STAKE your WMTx."
 header:
-   image_fullwidth  : "header_homepage_13.jpg"
+   image_fullwidth  : "pekoex2.jpg"
 permalink           : "/getting-started/"
 ---
 1. 
