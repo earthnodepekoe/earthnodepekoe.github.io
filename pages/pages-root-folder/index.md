@@ -45,8 +45,6 @@ permalink: /index.html
 # this page as active in the topbar navigation
 #
 
-{% include alert terminal='jekyll -serve' %}
-
 homepage: true
 ---
 
