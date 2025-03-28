@@ -38,7 +38,7 @@ widget3:
 callforaction:
   url: https://earthnodepekoe.github.io/getting-started
   text: STAKE NOW WMTx
-  style: info
+  style: alert
 permalink: /index.html
 #
 # This is a nasty hack to make the navigation highlight
