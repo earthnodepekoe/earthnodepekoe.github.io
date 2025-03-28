@@ -44,6 +44,7 @@ permalink: /index.html
 # This is a nasty hack to make the navigation highlight
 # this page as active in the topbar navigation
 #
+{% include alert terminal='jekyll -serve' %}
 homepage: true
 ---
 
