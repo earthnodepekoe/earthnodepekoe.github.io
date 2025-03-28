@@ -46,6 +46,7 @@ permalink: /index.html
 #
 homepage: true
 ---
+{% include alert warning='This is a warning.' %}
 
 <div id="videoModal" class="reveal-modal large" data-reveal="">
   <div class="flex-video widescreen vimeo" style="display: block;">
