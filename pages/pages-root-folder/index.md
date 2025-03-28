@@ -14,9 +14,7 @@ widget1:
   title: "Revolutionizing how the world connects"
   url: 'https://earthnodepekoe.github.io/blog/'
   image: puny 300x200.jpg
-  text: 'Innovation should serve humanity—not corporations. Mobile networks are essential in today’s world, yet we’ve surrendered control to Big Wireless, which profits from our data while leaving half the world disconnected and many major cities with unreliable coverage. 
-  The digital world is evolving, but mobile networks remain stuck in the past. You’re paying more for less, with limited coverage and your personal data being treated like a commodity. Privacy is a right, not a privilege. 
-  Enough is enough. It’s time for a mobile network that works for you, not against you.'
+  text: 'Innovation should serve humanity—not corporations. Mobile networks are essential in today’s world, yet we’ve surrendered control to Big Wireless, which profits from our data while leaving half the world disconnected and many major cities with unreliable coverage. The digital world is evolving, but mobile networks remain stuck in the past. You’re paying more for less, with limited coverage and your personal data being treated like a commodity. Privacy is a right, not a privilege. Enough is enough. It’s time for a mobile network that works for you, not against you.'
 widget2:
   title: "Why stake with us?"
   url: '/getting-started/'
@@ -38,7 +36,7 @@ widget3:
 # To change colors see sass/_01_settings_colors.scss
 #
 callforaction:
-  url: https://earthnodepekoe.github.io
+  url: /getting-started/
   text: STAKE NOW WMTx
   style: terminal
 permalink: /index.html
