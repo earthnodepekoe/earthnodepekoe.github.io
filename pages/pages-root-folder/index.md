@@ -38,7 +38,7 @@ widget3:
 callforaction:
   url: /getting-started/
   text: STAKE NOW WMTx
-  style: terminal
+  style: info
 permalink: /index.html
 #
 # This is a nasty hack to make the navigation highlight
