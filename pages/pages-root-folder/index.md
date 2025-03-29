@@ -35,7 +35,7 @@ widget3:
 # to use the main color or success, alert or secondary.
 # To change colors see sass/_01_settings_colors.scss
 #
-
+{% include alert info='Show an info alert with <b>outstanding</b> <a href="#info">information</a>.' %}
 callforaction:
   url: https://earthnodepekoe.github.io/getting-started
   text: STAKE NOW WMTx
