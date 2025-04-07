@@ -9,7 +9,7 @@ header:
 callforaction:
   url: https://earthnodepekoe.github.io/getting-staked
   text: STAKE NOW WMTx
-  style: alert
+  style: terminal
 permalink           : "/getting-staked/"
 ---
 1. 
