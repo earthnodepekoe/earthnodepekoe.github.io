@@ -57,7 +57,7 @@ format: frontpage
 {% endif %}
 {% if page.callforaction %}
     <div class="row t60 b60">
-        <div class="small-12 center columns">
+        <div class="small-12 text-center columns">
             <a class="button large radius {{ page.callforaction.style }}" href="{{ url }}{{ page.callforaction.url }}"{% if page.callforaction.url contains 'http' %} target="_blank" {% endif %}>{{ page.callforaction.text }}</a>
         </div><!-- /.small-12.columns -->
     </div><!-- /.row -->
@@ -69,8 +69,8 @@ format: frontpage
 * First check, if widget is empty or not by checking if there is a title
 *
 {% endcomment %}
-<div class="row t60 b60">
- <div class="small-12 center columns">
+<div class="row t60">
+
 	{% if page.widget1.image or page.widget1.video or page.widget1.title %}
 		{% include _frontpage-widget.html widget=page.widget1 %}
 	{% endif %}
@@ -82,7 +82,7 @@ format: frontpage
 	{% if page.widget3.image or page.widget3.video or page.widget3.title %}
 		{% include _frontpage-widget.html widget=page.widget3 %}
 	{% endif %}
- </div><!-- /.small-12.columns -->
+
 </div><!-- /.row -->
 
 
