@@ -7,10 +7,10 @@ teaser              : "This step-by-step guide helps you to STAKE your WMTx."
 header:
    image_fullwidth  : "pekoex2.jpg"
 callforaction:
-  url: https://earthnodepekoe.github.io/getting-started
+  url: https://earthnodepekoe.github.io/getting-staked
   text: STAKE NOW WMTx
   style: alert
-permalink           : "/getting-started/"
+permalink           : "/getting-staked/"
 ---
 1. 
 1. 
