@@ -15,7 +15,7 @@ permalink           : "/getting-started/"
 
 
 <a class="radius button small" href="{{ site.url }}{{ site.baseurl }}/documentation/">STAKE WMTX›</a>
- [1]: {{ site.url }}{{ site.baseurl }}/documentation/
+
 
  
 Pekoe is not just an EarthNode operator; it's a movement. We are committed to securing the World Mobile network while maximizing rewards for our delegators. But we go beyond blockchain—we bring connectivity to the most remote and heroic tea plantations on Earth.
