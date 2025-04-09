@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: "Why Blockchain Audits Matter in a Trustless World"
 date: 2025-03-25
 categories: design
