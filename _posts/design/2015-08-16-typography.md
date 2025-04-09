@@ -32,7 +32,6 @@ categories:
 
 <div class="medium-8 medium-pull-4 columns" markdown="1">
 
-# Why Blockchain Audits Matter in a Trustless World
 
 *Published on March 25, 2025 by the World Mobile team*
 
