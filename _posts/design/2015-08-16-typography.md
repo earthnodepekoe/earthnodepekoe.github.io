@@ -3,7 +3,7 @@ layout: page-fullwidth
 title: "Why Blockchain Audits Matter in a Trustless World"
 subheadline: "Decentralization changes the rules"
 meta_teaser: "Trust, in a decentralized world, is not assumed. It’s audited. Here's why audits are essential in a trustless world, particularly with a system as complex as a blockchain."
-teaser: "<em>Feeling Responsive</em> uses <a href='https://www.google.com/fonts/specimen/Volkhov'>Volkhov</a> for headlines, <a href='https://www.google.com/fonts/specimen/Lato'>Lato</a> for everything else and if you are in need to show some code, it will be in <a href='http://www.microsoft.com/typography/fonts/family.aspx?FID=18'>Lucida Console</a> or <a href='http://en.wikipedia.org/wiki/Monaco_(typeface)'>Monaco</a>."
+teaser: "Trust, in a decentralized world, is not assumed. It’s audited. Here's why audits are essential in a trustless world, particularly with a system as complex as a blockchain."
 header:
     image: homepage_typography.jpg
     background-color: "#262930"
